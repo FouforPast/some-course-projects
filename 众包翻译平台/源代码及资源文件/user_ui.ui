@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user_ui</class>
+ <widget class="QMainWindow" name="user_ui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>我的任务</string>
+       </attribute>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>10</y>
+          <width>388</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>388</width>
+          <height>301</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>388</width>
+          <height>301</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_c">
+         <widget class="QPushButton" name="pushButton_c_detail">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>270</y>
+            <width>50</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>详细信息</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>我负责的任务</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_c">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>371</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>状态</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>薪酬</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>发布者</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>原语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>目标语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>翻译者报名截止日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最终期限</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_t">
+         <widget class="QPushButton" name="pushButton_t_detail">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>270</y>
+            <width>60</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>详细信息</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>我翻译的任务</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_t">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>371</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>主任务编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>状态</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>报酬</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>负责人</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>发布者</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>原语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>目标语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>截止日期</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_re">
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>我审核的任务</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_re">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>371</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>状态</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>薪酬</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>负责人</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>发布者</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>原语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>目标语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>截止日期</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QPushButton" name="btn_re_detail">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>270</y>
+            <width>50</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>详细信息</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_r">
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>我发布的任务</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_r_detail">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>270</y>
+            <width>50</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>详细信息</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="tableWidget_r">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>371</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>编号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>标题</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>状态</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>负责人</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>薪酬</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>原语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>目标语言</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>发布日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>负责人报名截止日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>翻译者报名截止日期</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>最终期限</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="pushButton_r">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>我发布的</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_c">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>我负责的</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_t">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>我翻译的</string>
+        </property>
+       </widget>
+       <widget class="QCommandLinkButton" name="commandLinkButton_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_re">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>60</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>我审核的</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>我的信息</string>
+       </attribute>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>271</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="widget_2" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>160</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>6</x>
+            <y>6</y>
+            <width>18</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>性别</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_sex">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>6</y>
+            <width>30</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="pic.qrc">:/image/girl.jpeg</pixmap>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="widget_4" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>账户余额</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_money">
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="widget_5" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>120</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>年龄</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linet_age"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="widget_7" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>0</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>用户名</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="linet_username"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="widget_3" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>40</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>手机号码</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_phone">
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser_cer">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>254</y>
+           <width>180</width>
+           <height>60</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>36</x>
+           <y>240</y>
+           <width>41</width>
+           <height>9</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>语言资质</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widget_8" native="true">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>200</y>
+           <width>180</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>积分</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_grade">
+            <property name="text">
+             <string>label</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>120</y>
+          <width>151</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>149</width>
+           <height>179</height>
+          </rect>
+         </property>
+         <widget class="QPushButton" name="pushButton_saveexit">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>139</y>
+            <width>80</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>保存并退出</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_changepsd">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>63</y>
+            <width>80</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>修改密码</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_recharge">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>25</y>
+            <width>80</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_changecer">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>101</y>
+            <width>80</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>修改语言资质证明</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>100</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string>常用操作</string>
+        </property>
+       </widget>
+       <widget class="QCommandLinkButton" name="commandLinkButton">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>0</y>
+          <width>61</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionsds">
+   <property name="text">
+    <string>我发布的</string>
+   </property>
+  </action>
+  <action name="actionfsd">
+   <property name="text">
+    <string>我负责的</string>
+   </property>
+  </action>
+  <action name="actionds">
+   <property name="text">
+    <string>我翻译的</string>
+   </property>
+  </action>
+  <action name="actiondf">
+   <property name="text">
+    <string>我发布的</string>
+   </property>
+  </action>
+  <action name="actionsd">
+   <property name="text">
+    <string>我负责的</string>
+   </property>
+  </action>
+  <action name="actionsfsd">
+   <property name="text">
+    <string>我翻译的</string>
+   </property>
+  </action>
+  <action name="actionji">
+   <property name="text">
+    <string>基本信息</string>
+   </property>
+  </action>
+  <action name="actionsafkh">
+   <property name="text">
+    <string>修改基本信息</string>
+   </property>
+  </action>
+  <action name="actionasd">
+   <property name="text">
+    <string>充值</string>
+   </property>
+  </action>
+  <action name="actionas">
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+  </action>
+  <action name="actionsaf">
+   <property name="text">
+    <string>saf</string>
+   </property>
+  </action>
+  <action name="actiondas">
+   <property name="text">
+    <string>das</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="pic.qrc"/>
+ </resources>
+ <connections/>
+</ui>

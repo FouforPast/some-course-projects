@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sex">
+        <file>C:/Users/10025/Desktop/boy.jpg</file>
+        <file>C:/Users/10025/Desktop/girl.jpeg</file>
+    </qresource>
+</RCC>

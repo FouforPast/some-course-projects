@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>assignment_ui</class>
+ <widget class="QMainWindow" name="assignment_ui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>518</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_001">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>178</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>招募译者中</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_r">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>58</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发布任务</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_joinin">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>6</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加入翻译团队</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stacked_info">
+    <property name="geometry">
+     <rect>
+      <x>111</x>
+      <y>25</y>
+      <width>401</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>401</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>401</width>
+      <height>290</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_0">
+     <widget class="QPushButton" name="btn_s_contractor">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>257</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>报名负责人</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_detail1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>257</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看简介</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_0">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>编号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布者</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>原语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>报酬</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>截至日期</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_sign_up_reviewer">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>257</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>报名审核人</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <widget class="QComboBox" name="comboBox_001">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>62</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>选择项目</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>编号</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>标题</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>发布者</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>原语言</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>目标语言</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>报酬</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>发布日期</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>截至日期</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sort">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>排序</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>正序</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>倒序</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <widget class="QPushButton" name="btn_s_interpreter">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>260</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>报名翻译者</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_detail2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>260</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看简介</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>编号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布者</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>负责人</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>原语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最低薪酬</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最高薪酬</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>报名截止日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最终截止日期</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <widget class="QComboBox" name="comboBox_002">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>62</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>选择项目</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>编号</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>标题</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>发布者</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>负责人</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>原语言</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>目标语言</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最低薪酬</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最高薪酬</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>发布日期</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>报名截止日期</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最终截止日期</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="pushButton_sort_2">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>10</y>
+         <width>50</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>排序</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>正序</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>倒序</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>编号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布者</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>原语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>负责人</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>翻译者</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>最终截止日期</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>401</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>编号</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布者</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>原语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>目标语言</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>负责人</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>发布日期</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>完成日期</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_002">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>126</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>招募负责人中</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bt_003">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>230</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>翻译中</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_004">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>283</y>
+      <width>60</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>已完成</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>518</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

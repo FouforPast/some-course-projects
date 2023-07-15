@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/boy.jpg</file>
+        <file>image/girl.jpeg</file>
+        <file>image/login.jpg</file>
+        <file>image/loginadmin.jpg</file>
+        <file>image/login_user.jpg</file>
+        <file>image/register.jpg</file>
+        <file>image/backg.jpg</file>
+        <file>image/admins.ico</file>
+        <file>image/message.ico</file>
+        <file>image/mine.ico</file>
+        <file>image/system_me.ico</file>
+        <file>image/task.ico</file>
+        <file>image/delete.ico</file>
+        <file>image/emit.ico</file>
+    </qresource>
+</RCC>

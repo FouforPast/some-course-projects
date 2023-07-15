@@ -1,0 +1,1 @@
+用IDEA打开本目录，然后运行src/MainWindow.java
