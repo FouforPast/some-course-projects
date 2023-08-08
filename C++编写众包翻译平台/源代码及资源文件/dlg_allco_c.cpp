@@ -71,13 +71,13 @@ void dlg_allco_c::on_pushButton_allco_clicked()
     }
 }
 //负责人查看详细信息
-void dlg_allco_c::on_pushButton_detail_clicked()
-{
-    if(ui->comboBox_select->currentText() == "查看翻译者" ||
-            ui->comboBox_select->currentText() == ""){
-        QMessageBox::information(this,"提示","无法查看",QMessageBox::Ok);
-        return;
-    }
-    dlg_r_alllco* dlg = new dlg_r_alllco(r,2,this,ui->comboBox_select->currentText());
-    dlg->show();
-}
+//void dlg_allco_c::on_pushButton_detail_clicked()
+//{
+//    if(ui->comboBox_select->currentText() == "查看翻译者" ||
+//            ui->comboBox_select->currentText() == ""){
+//        QMessageBox::information(this,"提示","无法查看",QMessageBox::Ok);
+//        return;
+//    }
+//    dlg_r_alllco* dlg = new dlg_r_alllco(r,2,this,ui->comboBox_select->currentText());
+//    dlg->show();
+//}

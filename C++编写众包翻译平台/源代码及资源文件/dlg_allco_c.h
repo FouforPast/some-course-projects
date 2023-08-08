@@ -17,7 +17,7 @@ public:
 private slots:
     void on_pushButton_allco_clicked();
 
-    void on_pushButton_detail_clicked();
+//    void on_pushButton_detail_clicked();
 
 private:
     R_assignment* r;
